@@ -1,0 +1,16 @@
+﻿<Window x:Class="Fabrics.View.Windows.AuthorizationWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fabrics.View.Windows"
+        mc:Ignorable="d"
+        Title="Авториазация" Height="400" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <StackPanel VerticalAlignment="Center" Margin="20,0,20,0">
+        <TextBlock Text="Логин"/>
+        <TextBox Text="{Binding UserLogin}"/>
+        <TextBlock Text="Пароль"/>
+        <TextBox Text="{Binding UserPassword}"/>
+        <Button x:Name="LogInSystemBtn" Content="Войти в систему" Click="LogInSystemBtn_Click" Margin="0,10"/>
+    </StackPanel>
+</Window>
